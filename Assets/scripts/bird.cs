@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class bird : MonoBehaviour
 {
+    [SerializeField]
+    private float velocidade = 3;
 
     Rigidbody2D fisica;
 
@@ -14,7 +16,7 @@ public class bird : MonoBehaviour
     }
 
     void impulsionar(){
-        this.fisica.AddForce(Vector2.up * 5,ForceMode2D.Impulse);
+        this.fisica.AddForce(Vector2.up * velocidade,ForceMode2D.Impulse);
     }
 
 
