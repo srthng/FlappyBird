@@ -601,7 +601,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &886307447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1168,6 +1168,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 228590291}
     m_Modifications:
+    - target: {fileID: 6396610992766100087, guid: 7686b4728fc240d4cbfade2905d19fd5, type: 3}
+      propertyPath: variacaoY
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6396610992766100087, guid: 7686b4728fc240d4cbfade2905d19fd5, type: 3}
       propertyPath: velocidade
       value: 0.6
