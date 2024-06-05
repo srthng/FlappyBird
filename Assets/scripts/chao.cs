@@ -25,4 +25,6 @@ public class chao : MonoBehaviour
 
         this.transform.position = this.posicaoInicial + Vector3.left * deslocamento;
     }
+
+    
 }
