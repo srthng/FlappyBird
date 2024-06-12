@@ -22,9 +22,8 @@ public class bird : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space)) 
         {
-            Debug.Log("Clicou");
             this.impulsionar();
         }
     }
