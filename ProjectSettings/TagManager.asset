@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1380788163
+    locked: 0
+  - name: "Obst\xE1culos"
+    uniqueID: 726844917
+    locked: 0
+  - name: Player
+    uniqueID: 1893821245
+    locked: 0

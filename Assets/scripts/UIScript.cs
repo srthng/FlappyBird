@@ -8,15 +8,14 @@ public class UIScript : MonoBehaviour
     private int pontos;
     private Label textoPontuacao;
 
-    public void adicionarPontos()
-    {
+    public void adicionarPontos(){
         this.pontos++;
         this.textoPontuacao.text = this.pontos.ToString();
     }
 
-    void Start()
-    {
-        var root = GetComponent<UIDocument>().rootVisualElement;    
-        textoPontuacao = root.Q<Label>("Pontos");
+    void Start(){
+
+        var root = GetComponent<UIDocument>().rootVisualElement;
+        textoPontuacao = root.Q<Label>("pontos");
     }
 }
