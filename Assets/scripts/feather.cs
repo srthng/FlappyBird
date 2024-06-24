@@ -22,5 +22,13 @@ public class feather : MonoBehaviour
         rb.velocity = transform.right * speed;
         
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            lifeTime = 0;
+        }
+    }
 
 }
