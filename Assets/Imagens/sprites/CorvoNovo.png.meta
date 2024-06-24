@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c170651c5fc7aef4e8f9fdf61c97d8b7
+guid: 094e025f5123224429a4ea8e076dc99f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,7 +147,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CorvoNovo_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1312
+        width: 704
+        height: 736
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32309d5fda3534b44b10e15e2de1d327
+      internalID: 1975135372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CorvoNovo_1
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1312
+        width: 640
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04b1bfbda961fb4fbd75ffdd1586a10
+      internalID: 747933181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CorvoNovo_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 672
+        height: 576
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34b8262dd069094080c8415c57904e2
+      internalID: 1267115586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CorvoNovo_3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 288
+        width: 736
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c921dcf3dc556d47b6847386d00d935
+      internalID: -860985716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -158,7 +242,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CorvoNovo_0: 1975135372
+      CorvoNovo_1: 747933181
+      CorvoNovo_2: 1267115586
+      CorvoNovo_3: -860985716
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

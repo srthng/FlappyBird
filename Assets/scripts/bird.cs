@@ -4,31 +4,46 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private Transform firingPoint;
+    [Range(0.1f, 1f)]
+    [SerializeField] private float fireRate = 0.5f;
     [SerializeField]
     private float velocidade = 3;
 
-   //cria a variavel fisica do tipo Rigidbody
-   Rigidbody2D fisica;
-    
-    //método Awake é chamado toda vez que o objeto é criado
-    private void Awake(){
-    //adiciona à variavel física o componente RigidBody daquele objeto ativo no momento
+    private float mx;
+    private float my;
+    private Vector2 mousePos;
+
+    Rigidbody2D fisica;
+
+    private void Awake()
+    {
+
         this.fisica = this.GetComponent<Rigidbody2D>();
     }
-    //métodos private somente nossa classe pode acessar
+
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown("space"))
         {
-            Debug.Log("Clicou");
-            //chama o método impulsionar
-            //o this serve para indicar que é o objeto ativo naquele momento que recerá ação
+            Debug.Log("a");
             this.Impulsionar();
         }
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
     }
-    //método que impulsiona nosso pássaro
-    private void Impulsionar(){
-    //adiciona a variável física e o método AddForce, adicionando uma força para cima do tipo impulso
+
+
+    private void Impulsionar()
+    {
         this.fisica.AddForce(Vector2.up * velocidade, ForceMode2D.Impulse);
+    }
+
+    private void Shoot()
+    {
+        Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
     }
 }
