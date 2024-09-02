@@ -7,7 +7,6 @@ public class Bird : MonoBehaviour
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private Transform firingPoint;
     [Range(0.1f, 1f)]
-    [SerializeField] private float fireRate = 0.5f;
     [SerializeField]
     private float velocidade = 3;
 
@@ -15,19 +14,18 @@ public class Bird : MonoBehaviour
     private float my;
     private Vector2 mousePos;
 
-    Rigidbody2D fisica;
+    Rigidbody2D rb;
 
     private void Awake()
     {
 
-        this.fisica = this.GetComponent<Rigidbody2D>();
+        this.rb = this.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown("space"))
         {
-            Debug.Log("a");
             this.Impulsionar();
         }
         if (Input.GetMouseButtonDown(0))
@@ -39,7 +37,7 @@ public class Bird : MonoBehaviour
 
     private void Impulsionar()
     {
-        this.fisica.AddForce(Vector2.up * velocidade, ForceMode2D.Impulse);
+        this.rb.AddForce(Vector2.up * velocidade, ForceMode2D.Impulse);
     }
 
     private void Shoot()
